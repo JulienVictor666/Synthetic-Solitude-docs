@@ -6,10 +6,11 @@ Le hub est l'interieur du vaisseau ecrase. Il sert de menu principal diegetique.
 
 ## Zones
 
-- Cuve de regeneration : narration et etat du heros.
+- Module medical ou cuve de regeneration : narration et etat du protagoniste. Le role exact de la cuve depend de sa future presence en mission.
 - Atelier robotique : selection et equipement des robots.
-- Console tactique : choix des missions.
+- Console tactique : comparaison des missions, risques, inconnues et recompenses.
 - Terminal de programmation : scripts et debug.
+- Console d'intervention : configuration des protocoles et du budget disponible.
 - Fenetre ou sas : vue sur l'exterieur hostile.
 
 ## Menu principal

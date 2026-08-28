@@ -10,7 +10,7 @@ Faiblesses : faible defense, depend des lignes de vue.
 
 ## Tank
 
-Role : attirer les tirs et proteger le heros.
+Role : attirer les tirs et proteger les allies ou l'objectif de mission.
 
 Forces : blindage, interception, zone de controle.
 

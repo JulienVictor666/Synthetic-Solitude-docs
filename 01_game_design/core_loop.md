@@ -4,25 +4,38 @@
 
 1. Retour au vaisseau.
 2. Lecture d'un evenement narratif court.
-3. Choix d'une mission.
-4. Preparation des robots.
-5. Run tactique.
-6. Extraction, mort ou echec.
-7. Deblocages et ajustements.
+3. Choix d'une mission selon ses risques, contraintes, inconnues et recompenses.
+4. Composition, equipement et programmation de l'escouade.
+5. Selection des protocoles d'intervention.
+6. Mission de trois ou quatre combats automatiques.
+7. Choix de maintenance entre les combats.
+8. Retour, diagnostic, deblocages et ajustements.
 
 ## Boucle de preparation
 
-1. Lire les menaces dominantes de la mission.
-2. Choisir les robots.
-3. Equiper armes, capteurs, IA, jambes, torse, bras et paquetage.
-4. Modifier les scripts.
-5. Tester ou simuler les comportements.
+1. Lire les menaces confirmees, probables et inconnues de la mission.
+2. Lire la recompense, le nombre de combats et le budget d'intervention.
+3. Respecter les eventuelles contraintes de robots ou de capacites.
+4. Choisir les robots.
+5. Equiper armes, capteurs, IA, jambes, torse, bras et paquetage.
+6. Modifier les scripts.
+7. Choisir les declencheurs et actions des protocoles d'intervention.
+8. Tester ou simuler les comportements.
 
-## Boucle de combat
+## Boucle de combat automatique
 
-1. Observer la carte et les intentions ennemies.
-2. Donner les ordres du heros.
-3. Verifier les programmes des robots.
-4. Valider le tour.
-5. Regarder l'execution.
-6. Corriger le plan au tour suivant.
+1. Les robots avancent et combattent selon leurs programmes.
+2. Le joueur observe la ligne active, les cibles et les menaces.
+3. Un protocole valide peut mettre le combat en pause.
+4. Le joueur depense une action, ignore l'occasion ou reprend immediatement.
+5. Le combat se termine par une victoire, une retraite ou la destruction de l'escouade.
+
+## Boucle entre deux combats
+
+1. Consulter un diagnostic court du combat precedent.
+2. Decouvrir les pieces et ressources recuperees.
+3. Choisir une option de maintenance : reparer, ameliorer temporairement, modifier un equipement ou conserver les ressources.
+4. Consulter les nouveaux renseignements disponibles sur le prochain combat.
+5. Lancer le combat suivant.
+
+Le contenu exact des modifications de programme autorisees entre deux combats reste a tester. La premiere version du prototype doit comparer une programmation verrouillee pour toute la mission avec une seule correction limitee entre deux combats.

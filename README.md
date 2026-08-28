@@ -23,7 +23,12 @@ Quand une decision devient stable, elle doit etre reportee dans le fichier speci
 
 Avant de commencer la production Unity, il faut verrouiller :
 
-1. Le format exact d'un tour de combat.
-2. L'ordre d'execution des scripts de robots.
-3. La difference entre ordres directs du heros et programmation autonome.
-4. Le scope du premier prototype jouable.
+1. Le rythme exact d'un combat automatique et sa duree cible.
+2. La frequence de reevaluation des programmes de robots.
+3. Le nombre d'interventions accorde selon la taille d'une mission.
+4. Les ajustements autorises entre deux combats.
+5. Le scope du premier prototype jouable.
+
+## Historique de direction
+
+Le tag Git `v0.1.0-pre-autobattler` conserve la documentation avant le recentrage du jeu sur des missions courtes en autobattle.

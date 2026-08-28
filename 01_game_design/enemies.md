@@ -25,5 +25,11 @@ Vestiges de la guerre ou defenses automatiques. Tres lisibles, mais capables de 
 - Vitesse.
 - Portee.
 - Zone d'effet.
-- Capacite a cibler le heros.
+- Capacite a isoler ou concentrer les tirs sur un robot.
 - Capacite a perturber les scripts.
+
+## Role dans les renseignements
+
+Une fiche de mission peut annoncer une famille, un role ou une capacite sans reveler chaque unite. Une information probable ou inconnue doit ajouter un test d'adaptation, mais ne doit pas contredire les menaces confirmees.
+
+Exemple : une mission annonce un blindage lourd confirme, des tireurs probables et une signature inconnue. Le joueur peut se preparer contre le blindage sans connaitre parfaitement la composition de chaque combat.

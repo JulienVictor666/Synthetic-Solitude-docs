@@ -1,25 +1,27 @@
-# Capacites Du Heros
+# Presence Du Protagoniste En Mission
 
-## Role
+## Statut
 
-Le heros est la presence humaine sur le terrain. Il est fragile, mais ses decisions peuvent sauver une situation que les scripts seuls ne gerent pas.
+Question de design ouverte. Le protagoniste ne participe pas aux missions ordinaires dans la nouvelle boucle autobattler. Les actions limitees du joueur sont representees par les protocoles d'intervention decrits dans `player_interventions.md`.
 
-## Capacites possibles
+## Piste privilegiee a tester
 
-- Se deplacer.
-- Attaquer.
-- Utiliser un module special.
-- Definir une cible prioritaire.
-- Marquer une zone dangereuse.
-- Forcer un deplacement de robot.
-- Activer un mode tactique.
-- Buff temporairement un robot.
-- Lire les intentions ennemies.
+Certaines missions critiques demanderaient au protagoniste d'accompagner physiquement l'escouade pour recuperer une ressource tres precieuse, manipuler une technologie protegee ou etablir une connexion directe.
 
-## Contraintes
+Dans cette piste :
 
-Le heros ne doit pas devenir plus important que la programmation. Ses actions doivent etre rares, decisives et exposees au danger.
+- Le protagoniste est une unite programmable soumise aux memes regles d'autobattle.
+- Sa presence change la condition de defaite et rend la mort possible.
+- Le joueur ne le controle pas directement pendant le combat.
+- Les missions restent courtes et n'introduisent pas un second systeme tactique.
+- Les recompenses sont assez rares pour justifier le risque.
 
-## Condition critique
+## Enjeu narratif
 
-La mort du heros met fin a la run.
+Sans presence physique du protagoniste, la regeneration reguliere n'a plus de cause forte. Elle doit alors etre retiree ou remplacee par un autre mecanisme narratif.
+
+Si les missions critiques sont conservees, la mort et la reconstruction deviennent plus rares et plus significatives. Cette option permet de garder le questionnement sur l'humanite du protagoniste sans banaliser sa disparition.
+
+## Decision necessaire
+
+Ne pas developper ces missions avant que la boucle principale avec uniquement des robots soit validee. Tester ensuite une mission critique avec le protagoniste comme unite programmable et mesurer si elle enrichit vraiment le jeu.

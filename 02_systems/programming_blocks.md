@@ -2,41 +2,41 @@
 
 ## Objectif
 
-Permettre au joueur de definir le comportement des robots sans ecrire de code. Le systeme doit etre visuel, testable et comprehensible en combat.
+Permettre au joueur de definir le comportement des robots sans ecrire de code. Le systeme doit etre visuel, testable et comprehensible pendant un combat automatique rapide.
 
-## Structure d'un programme
+## Structure d'un programme autonome
 
-Un programme contient :
+Un programme contient des lignes classees par priorite. Chaque ligne suit le format :
 
-- Une zone principale.
-- Une zone d'interruption.
-- Des lignes composees de tests et d'actions.
+`SI conditions vraies -> executer une action`
 
-## Structure d'une ligne
+Lorsqu'un robot peut prendre une nouvelle decision, il lit les lignes de haut en bas. La premiere ligne valide fournit l'action. Si aucune ligne n'est valide, le robot utilise un comportement de secours clairement affiche.
 
-Une ligne suit le format :
+## Priorites reactives
 
-`SI tests vrais -> executer actions dans l'ordre`
+Les urgences autonomes sont placees en haut du programme : esquiver une zone dangereuse, reparer un allie critique, reculer ou interrompre une attaque. Elles ne mettent jamais le combat en pause et ne demandent aucune action du joueur.
 
-Si un test echoue, la ligne est ignoree et le programme passe a la suivante.
-
-## Interruptions
-
-Les interruptions sont verifiees entre les lignes principales. Elles servent aux cas critiques : proteger le heros, esquiver une explosion, reparer un allie, assister une arme lourde.
+Les priorites reactives ne doivent pas etre confondues avec les protocoles d'intervention du joueur, decrits dans `player_interventions.md`.
 
 ## Blocs speciaux
 
-- `Definir variable` : memoriser une cible ou position.
-- `STOP` : arreter la lecture apres cette ligne.
-- `RESET` : revenir immediatement au debut.
-- `Mode` : lire l'ordre tactique actif du heros.
+- `Definir variable` : memoriser une cible, un allie ou une position.
+- `Effacer variable` : oublier une valeur devenue inutile.
+- `Attendre` : ne rien faire pendant une courte duree.
+- `Mode` : lire un etat interne ou un mode temporaire accorde par une intervention.
+
+`STOP` et `RESET` viennent de l'ancien modele sequentiel. Leur utilite dans un systeme reevalue a chaque decision doit etre validee avant de les conserver.
 
 ## Progression
 
-- Debut : conditions simples, actions simples, une interruption.
-- Milieu : variables, priorites, capteurs avances.
-- Fin : cooperation, interruptions multiples, scripts longs.
+- Debut : conditions simples, actions simples et peu de lignes.
+- Milieu : variables, priorites, capteurs avances et cooperation.
+- Fin : programmes plus longs, partage d'informations et comportements specialises.
 
-## Point a specifier
+## Points a specifier
 
-Il faut definir le cout exact des actions : une ligne peut-elle executer plusieurs actions dans un meme tour, ou chaque action consomme-t-elle une ressource ?
+- Frequence de reevaluation du programme.
+- Duree et cout en energie de chaque action.
+- Comportement si plusieurs cibles satisfont la meme ligne.
+- Comportement de secours lorsqu'aucune ligne ne fonctionne.
+- Possibilite ou non de corriger une ligne entre deux combats.
